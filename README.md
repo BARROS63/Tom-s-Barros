@@ -83,6 +83,8 @@ public:
 This is the code I tried to develop:
 
 ´´´c++
+
+// this is a class for my car
 class mycar {
 private:
     std::vector<int> sensor_reading();
@@ -107,6 +109,6 @@ public:
                 Serial.print("Sensor Reading %d: %d\n", i + 1, sensor_reading[i]); 
             }
         }
-    };
+}
 ```
 
