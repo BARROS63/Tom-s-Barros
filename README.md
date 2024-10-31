@@ -27,7 +27,7 @@ Check out the R2D(Ready To Drive) code on the C3 state machine. In the condition
 **Answer:** We use that timer to remove bad timing. So that, when commiting to the R2D mode, it must be on porpouse. 
 ### 4
 What is the ID of the can message sent to the bamocar to request torque?
-**Answer:** *Insert answer*
+**Answer:** 0x181
 ### 5 
 The code below is not amazing, tell us some things you would change to improve it, you can write them down in text or correct the code:
 ```c++
