@@ -81,7 +81,8 @@ public:
 **Answer:** Firstly remove any varible that is not being use, in this case "sensor_reading9". Secondly reduce the amount of text present, use vectores instead of a variable that only changes a number. Lastly modify the function to take advantage of the vector.
 
 This is the code I tried to develop:
-´´´
+
+´´´c++
 class mycar {
 private:
     std::vector<int> sensor_reading();
