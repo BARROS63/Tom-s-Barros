@@ -78,4 +78,34 @@ public:
     }
 };
 ```
+**Answer:** Firstly remove any varible that is not being use, in this case "sensor_reading9". Secondly reduce the amount of text present, use vectores instead of a variable that only changes a number. Lastly modify the function to take advantage of the vector.
+
+This is the code I tried to develop:
+´´´
+class mycar {
+private:
+    std::vector<int> sensor_reading();
+
+public:
+    mycar() :
+            sensor_reading(8,0){}
+        
+    void updateprint() 
+    {
+        for (int i=0; i<sensor_reading.size(); i++)
+        {
+            sensor_reading[i] = analogRead(i);
+            func(sensor_reading(i));
+        }
+    }
+
+    void func(sensor_reading())
+        {
+            for (int i = 0; i < sensor_reading.size(); i++)
+            {
+                Serial.print("Sensor Reading %d: %d\n", i + 1, sensor_reading[i]); 
+            }
+        }
+    };
+```
 
