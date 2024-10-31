@@ -8,7 +8,7 @@
 ### 2
 When we read values from the brake sensor (C1) and the apps (C3) we do not use the most recent reading and use instead a different approach. Explain the approach and why you think it is used.
 
-**Answer:** *Insert answer*
+**Answer:** Values go through a moving average before being sent. We use this aproach to reduce error from physicly vibrating the atuators.
 
 
 ### 3
